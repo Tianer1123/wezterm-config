@@ -1,24 +1,9 @@
-# 我的WezTerm配置
+## 参考：
+`wezterm` 配置：`https://github.com/QianSong1/wezterm-config`
 
-![screenshot](./screenshots/screenshot-1.png)
+老外配置：`https://github.com/KevinSilvester/wezterm-config`
 
-## 相关链接
-- <https://github.com/rxi/lume>
-- <https://github.com/catppuccin/wezterm>
-- <https://github.com/wez/wezterm/discussions/628#discussioncomment-1874614>
-- <https://github.com/wez/wezterm/discussions/628#discussioncomment-5942139>
-
-
-
-## 前提条件
-
-安装`wezterm`终端
-
-[WezTerm终端](https://github.com/wez/wezterm/releases)
-
-安装目录：C:\soft\WezTerm-windows
-
-
+`wezterm` 项目：`https://github.com/wez/wezterm`
 
 ## 使用方法
 
@@ -28,5 +13,5 @@
 
 3、将解压的文件放入：`$HOME/.config/wezterm`目录底下
 
-Windows目录：`C:\Users\Fizz\.config\wezterm`
+    Windows目录：`C:\Users\Fizz\.config\wezterm`
 
