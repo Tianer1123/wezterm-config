@@ -37,6 +37,7 @@ local keys = {
    { key = '[', mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
    { key = ']', mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
 
+
    -- window --
    -- spawn windows
    { key = 'n', mods = mod.SUPER, action = act.SpawnWindow },
