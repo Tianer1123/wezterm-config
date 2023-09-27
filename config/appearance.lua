@@ -12,7 +12,8 @@ return {
    -- color scheme
    -- colors = colors,
    -- color_scheme = "GruvboxDarkHard",
-   color_scheme = "tokyonight_night",
+   -- color_scheme = "tokyonight_night",
+   color_scheme = "tokyonight_moon",
 
    -- background
    -- background = {
