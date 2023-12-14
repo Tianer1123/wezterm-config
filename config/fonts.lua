@@ -2,11 +2,12 @@ local wezterm = require('wezterm')
 local platform = require('utils.platform')
 
 local font = 'FiraCode Nerd Font Mono'
+-- local font = 'IntelOneMono Nerd Font'
 -- local font_with_fallback = {
 --    'FiraCode Nerd Font Mono',
 --    '微软雅黑',
 -- }
-local font_size = platform().is_mac and 12 or 11
+local font_size = platform().is_mac and 12 or 10
 
 return {
    font = wezterm.font(font),
