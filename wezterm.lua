@@ -15,14 +15,18 @@ config.initial_rows = 24
 config.window_close_confirmation = 'NeverPrompt'
 
 -- fonts
-config.font = wezterm.font 'FiraCode Nerd Font Mono'
+-- config.font = wezterm.font 'FiraCode Nerd Font Mono'
+-- config.font = wezterm.font 'Iosevka Nerd Font Mono'
+-- config.font = wezterm.font 'JetBrainsMonoNL Nerd Font Mono'
+-- config.font = wezterm.font 'SauceCodePro Nerd Font Mono'
+config.font = wezterm.font 'IntelOneMono Nerd Font'
 config.font_size = 10
 
 -- color
 config.enable_scroll_bar = true
 config.window_padding ={ left = 10, right = 15, top = 0, bottom = 0 }
 
-config.color_scheme ="GruvboxDarkHard"
+-- config.color_scheme ="GruvboxDarkHard"
 local gruvbox_scheme = wezterm.color.get_builtin_schemes()['GruvboxDarkHard']
 gruvbox_scheme.scrollbar_thumb = '#cccccc' -- 滚动条更明显
 config.colors = gruvbox_scheme
@@ -33,7 +37,7 @@ config.enable_tab_bar = true
 config.use_fancy_tab_bar = true
 
 -- background Opacity
-config.window_background_opacity = 0.98
+config.window_background_opacity = 0.95
 
 -- spawn a powershell in login mode
 config.default_prog = {'powershell'}
