@@ -15,12 +15,13 @@ config.initial_rows = 24
 config.window_close_confirmation = 'NeverPrompt'
 
 -- fonts
--- config.font = wezterm.font 'FiraCode Nerd Font Mono'
+config.font = wezterm.font 'FiraCode Nerd Font Mono'
 -- config.font = wezterm.font 'Iosevka Nerd Font Mono'
 -- config.font = wezterm.font 'JetBrainsMonoNL Nerd Font Mono'
 -- config.font = wezterm.font 'SauceCodePro Nerd Font Mono'
-config.font = wezterm.font 'IntelOneMono Nerd Font'
+-- config.font = wezterm.font 'IntelOneMono Nerd Font'
 config.font_size = 10
+config.line_height = 1.2
 
 -- color
 config.enable_scroll_bar = true
