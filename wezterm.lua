@@ -43,6 +43,8 @@ config.launch_menu = {
     { label = '内网穿透', args = {'ssh', 'tianer@49.232.162.165', '-p', '8000'}, },
 }
 
+config.unicode_version = 14
+
 -- 取消所有默认的热键
 config.disable_default_key_bindings = true
 local act = wezterm.action
