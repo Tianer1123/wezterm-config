@@ -15,13 +15,15 @@ config.initial_rows = 24
 config.window_close_confirmation = 'NeverPrompt'
 
 -- fonts
-config.font = wezterm.font 'FiraCode Nerd Font Mono'
+config.font = wezterm.font('UbuntuMono Nerd Font Mono')
+-- config.font = wezterm.font('MonoLisa Nerd Font', { weight = 'Light' })
+-- config.font = wezterm.font 'FiraCode Nerd Font Mono'
 -- config.font = wezterm.font 'Iosevka Nerd Font Mono'
 -- config.font = wezterm.font 'JetBrainsMonoNL Nerd Font Mono'
 -- config.font = wezterm.font 'SauceCodePro Nerd Font Mono'
--- config.font = wezterm.font 'IntelOneMono Nerd Font'
-config.font_size = 10
-config.line_height = 1.2
+-- config.font = wezterm.font 'IntoneMono Nerd Font Mono'
+config.font_size = 11
+config.line_height = 1.3
 
 -- color
 config.enable_scroll_bar = true
@@ -48,7 +50,7 @@ config.launch_menu = {
     { label = '内网穿透', args = {'ssh', 'tianer@49.232.162.165', '-p', '8000'}, },
 }
 
-config.unicode_version = 14
+config.unicode_version = 9
 
 -- 取消所有默认的热键
 config.disable_default_key_bindings = true
