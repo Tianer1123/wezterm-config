@@ -15,15 +15,15 @@ config.initial_rows = 24
 config.window_close_confirmation = 'NeverPrompt'
 
 -- fonts
-config.font = wezterm.font('MonoLisa Nerd Font')
--- config.font = wezterm.font('UbuntuMono Nerd Font Mono')
+-- config.font = wezterm.font('MonoLisa Nerd Font')
+config.font = wezterm.font('UbuntuMono Nerd Font Mono')
 -- config.font = wezterm.font('MonoLisa Nerd Font', { weight = 'Light' })
 -- config.font = wezterm.font 'FiraCode Nerd Font Mono'
 -- config.font = wezterm.font 'Iosevka Nerd Font Mono'
 -- config.font = wezterm.font 'JetBrainsMonoNL Nerd Font Mono'
 -- config.font = wezterm.font 'SauceCodePro Nerd Font Mono'
 -- config.font = wezterm.font 'IntoneMono Nerd Font Mono'
-config.font_size = 9
+config.font_size = 12
 config.line_height = 1.1
 
 -- color
