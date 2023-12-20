@@ -23,8 +23,8 @@ config.font = wezterm.font('UbuntuMono Nerd Font Mono')
 -- config.font = wezterm.font 'JetBrainsMonoNL Nerd Font Mono'
 -- config.font = wezterm.font 'SauceCodePro Nerd Font Mono'
 -- config.font = wezterm.font 'IntoneMono Nerd Font Mono'
-config.font_size = 12
-config.line_height = 1.1
+config.font_size = 13
+config.line_height = 1.2
 
 -- color
 config.enable_scroll_bar = true
