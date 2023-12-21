@@ -23,7 +23,7 @@ config.font = wezterm.font('UbuntuMono Nerd Font Mono')
 -- config.font = wezterm.font 'JetBrainsMonoNL Nerd Font Mono'
 -- config.font = wezterm.font 'SauceCodePro Nerd Font Mono'
 -- config.font = wezterm.font 'IntoneMono Nerd Font Mono'
-config.font_size = 13
+config.font_size = 12
 config.line_height = 1.2
 
 
@@ -120,15 +120,15 @@ wezterm.on('update-right-status', function(window, pane)
 config.window_background_opacity = 0.95
 
 -- spawn a powershell in login mode
-config.default_prog = {'C:/Program Files/Git/git-bash.exe'}
+config.default_prog = {'PowerShell'}
 -- launch_menu
 config.launch_menu = {
-    { label = 'git-bash', args = {'C:/Program Files/Git/git-bash.exe'}, },
     { label = 'PowerShell', args = {'powershell'}, },
+    { label = 'git-bash', args = {'C:/Program Files/Git/bin/bash.exe', "-i", "-l"}, },
     { label = '内网穿透', args = {'ssh', 'tianer@49.232.162.165', '-p', '8000'}, },
 }
 
-config.unicode_version = 9
+config.unicode_version = 14
 
 -- 取消所有默认的热键
 config.disable_default_key_bindings = true
