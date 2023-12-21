@@ -26,6 +26,10 @@ config.font = wezterm.font('UbuntuMono Nerd Font Mono')
 config.font_size = 13
 config.line_height = 1.2
 
+
+-- config.allow_square_glyphs_to_overflow_width = "Never" -- Never Always WhenFollowedBySpace(default)
+-- config.treat_east_asian_ambiguous_width_as_wide = false
+
 -- color
 config.enable_scroll_bar = true
 config.window_padding ={ left = 10, right = 15, top = 0, bottom = 0 }
@@ -116,9 +120,10 @@ wezterm.on('update-right-status', function(window, pane)
 config.window_background_opacity = 0.95
 
 -- spawn a powershell in login mode
-config.default_prog = {'powershell'}
+config.default_prog = {'C:/Program Files/Git/git-bash.exe'}
 -- launch_menu
 config.launch_menu = {
+    { label = 'git-bash', args = {'C:/Program Files/Git/git-bash.exe'}, },
     { label = 'PowerShell', args = {'powershell'}, },
     { label = '内网穿透', args = {'ssh', 'tianer@49.232.162.165', '-p', '8000'}, },
 }
