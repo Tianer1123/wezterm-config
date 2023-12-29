@@ -16,14 +16,14 @@ config.window_close_confirmation = 'NeverPrompt'
 
 -- fonts
 -- config.font = wezterm.font('MonoLisa Nerd Font')
-config.font = wezterm.font('UbuntuMono Nerd Font Mono')
+-- config.font = wezterm.font('UbuntuMono Nerd Font Mono')
 -- config.font = wezterm.font('MonoLisa Nerd Font', { weight = 'Light' })
--- config.font = wezterm.font 'FiraCode Nerd Font Mono'
+config.font = wezterm.font 'FiraCode Nerd Font Mono'
 -- config.font = wezterm.font 'Iosevka Nerd Font Mono'
 -- config.font = wezterm.font 'JetBrainsMonoNL Nerd Font Mono'
 -- config.font = wezterm.font 'SauceCodePro Nerd Font Mono'
 -- config.font = wezterm.font 'IntoneMono Nerd Font Mono'
-config.font_size = 12
+config.font_size = 11
 config.line_height = 1.2
 
 
@@ -117,13 +117,26 @@ wezterm.on('update-right-status', function(window, pane)
   end)
 
 -- background Opacity
-config.window_background_opacity = 0.95
+config.window_background_image="C:/Users/tianer/Pictures/Saved Pictures/1.jpg"
+-- config.window_background_opacity = 0.95
+config.window_background_image_hsb = {
+  -- Darken the background image by reducing it to 1/3rd
+  brightness = 0.05,
+
+  -- You can adjust the hue by scaling its value.
+  -- a multiplier of 1.0 leaves the value unchanged.
+  hue = 1.0,
+
+  -- You can adjust the saturation also.
+  saturation = 1.0,
+}
 
 -- spawn a powershell in login mode
 config.default_prog = {'PowerShell'}
 -- launch_menu
 config.launch_menu = {
     { label = 'PowerShell', args = {'powershell'}, },
+    { label = 'ubuntu-wsl2', args = {'WSL:Ubuntu'}, },
     { label = 'git-bash', args = {'C:/Program Files/Git/bin/bash.exe', "-i", "-l"}, },
     { label = '内网穿透', args = {'ssh', 'tianer@49.232.162.165', '-p', '8000'}, },
 }
