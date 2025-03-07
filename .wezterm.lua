@@ -6,21 +6,28 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
--- max size the window when start
-local mux = wezterm.mux
-wezterm.on("gui-startup", function(cmd)
-	local tab, pane, window = mux.spawn_window(cmd or {})
-	window:gui_window():maximize()
-end)
+config.initial_cols = 120
+config.initial_rows = 40
+config.window_content_alignment = {
+	horizontal = "Center",
+	vertical = "Center",
+}
 
--- fonts
-config.font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Regular" })
-config.font_size = 12
+-- fonts default is jetbrains mono
+-- wezterm ls-fonts --list-system
+-- config.font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Regular" })
+-- config.font = wezterm.font("Fira Code", { weight = "Regular" })
+-- config.font = wezterm.font("Maple Mono CN", { weight = "Light" })
+config.font = wezterm.font("Maple Mono CN")
+-- config.font = wezterm.font("Intel One Mono")Consolas
+-- config.font = wezterm.font("Consolas")
+config.font_size = 11   -- 200%
 -- config.line_height = 1.2
 
 -- default open wsl2
-config.default_domain = "WSL:Ubuntu-22.04"
+-- config.default_domain = "WSL:Ubuntu-22.04"
 
+-- performence
 -- fps settings
 config.max_fps = 120
 
@@ -34,7 +41,7 @@ config.scrollback_lines = 10000
 config.window_padding = {
 	left = 3,
 	right = 3,
-	top = 5,
+	top = 10,
 	bottom = 3,
 }
 
