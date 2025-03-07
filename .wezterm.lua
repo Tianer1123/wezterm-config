@@ -8,10 +8,6 @@ local config = wezterm.config_builder()
 
 config.initial_cols = 120
 config.initial_rows = 40
-config.window_content_alignment = {
-	horizontal = "Center",
-	vertical = "Center",
-}
 
 -- fonts default is jetbrains mono
 -- wezterm ls-fonts --list-system
